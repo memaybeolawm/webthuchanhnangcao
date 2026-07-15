@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "coreclr",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/SportsSln/SportsStore",
+      "program": "${workspaceFolder}/SportsSln/SportsStore/bin/Debug/net10.0/SportsStore.dll",
+      "stopAtEntry": false,
+      "env": {
+        "DOTNET_CLI_UI_LANGUAGE": "en-US",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "logging": {
+        "moduleLoad": false
+      },
+      "sourceFileMap": {
+        "/Views": "${workspaceFolder}/Views"
+      },
+      "name": "SportsStore [SportsStore]",
+      "preLaunchTask": "SportsStore",
+      "args": [],
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+https?://\\S",
+        "uriFormat": "http://localhost:5000"
+      }
+    },
+    {
+      "name": "Attach to a .NET Process",
+      "type": "coreclr",
+      "request": "attach",
+      "logging": {
+        "moduleLoad": false
+      }
+    }
+  ]
+}
